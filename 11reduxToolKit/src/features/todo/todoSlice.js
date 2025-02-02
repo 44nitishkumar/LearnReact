@@ -1,13 +1,7 @@
 import { createSlice, nanoid } from "@reduxjs/toolkit";
 
-// nano id ka kaam bus rhta h ki unique id generate krta h
 const initialState = {
-  todos: [
-    {
-      id: 1,
-      text: "Hello world",
-    },
-  ],
+  todos: [{ id: 1, text: "Hello world" }],
 };
 
 export const todoSlice = createSlice({
@@ -27,6 +21,7 @@ export const todoSlice = createSlice({
   },
 });
 
-export const { addTodo, removeTodo } = todoSlice.actions;
+
+export const {addTodo, removeTodo} = todoSlice.actions
 
 export default todoSlice.reducer
